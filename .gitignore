@@ -5,12 +5,7 @@ Thumbs.db
 # Raw scraped template source (mirrored, not original work) — lives on dev
 /template/
 
-# Internal business docs (not for public repo on this branch) — lives on docs branch
-/1. Client Facing/
-/2. Developer Facing/
-/3. Market Research & Strategy/
-
-# Site content lives on dev, not main
+# Site content lives on dev/main, not here
 /website/
 
 # Editor/tooling
