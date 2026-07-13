@@ -2,9 +2,6 @@
 .DS_Store
 Thumbs.db
 
-# Raw scraped template source (mirrored, not original work)
-/template/
-
 # Internal business docs (not for public repo)
 /1. Client Facing/
 /2. Developer Facing/
