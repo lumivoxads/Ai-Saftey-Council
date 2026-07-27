@@ -82,6 +82,33 @@
     a.addEventListener("click", function (e) { e.preventDefault(); });
   });
 
+  // --- Toast ---
+  var toastTimer = null;
+  function showToast(message) {
+    var toast = document.querySelector(".asc-toast");
+    if (!toast) {
+      toast = document.createElement("div");
+      toast.className = "asc-toast";
+      toast.setAttribute("role", "status");
+      toast.setAttribute("aria-live", "polite");
+      document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    toast.classList.add("is-visible");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      toast.classList.remove("is-visible");
+    }, 3200);
+  }
+
+  // --- Verify credential form: feature not live yet ---
+  document.querySelectorAll(".asc-verify__form").forEach(function (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      showToast("Credential verification is coming soon.");
+    });
+  });
+
   // --- Scroll-reveal entrance animations ---
   var REVEAL = ".asc-section__head, .asc-hero__copy > *, .asc-trust__item, .asc-cert-card, "
     + ".asc-res-card, .asc-prog-card, .asc-feature, .asc-stats > div, .asc-verify__inner > *, "

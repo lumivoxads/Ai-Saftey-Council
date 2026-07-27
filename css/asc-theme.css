@@ -503,6 +503,18 @@ body.asc {
 @keyframes ascWaPulse { 0% { transform: scale(1); opacity: .6; } 100% { transform: scale(1.6); opacity: 0; } }
 @media (max-width: 640px) { .asc-wa { width: 52px; height: 52px; right: 16px; bottom: 16px; } }
 
+/* Toast (e.g. "coming soon" notices) */
+.asc-toast {
+  position: fixed; left: 50%; bottom: 28px; z-index: 200;
+  transform: translate(-50%, 16px); opacity: 0; visibility: hidden;
+  background: var(--asc-navy); color: #fff; font-size: 14px; font-weight: 600;
+  padding: 14px 22px; border-radius: 10px; box-shadow: 0 16px 40px rgba(6,32,47,.28);
+  max-width: min(90vw, 380px); text-align: center;
+  transition: opacity .25s ease, transform .25s ease, visibility .25s;
+}
+.asc-toast.is-visible { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+@media (max-width: 640px) { .asc-toast { bottom: 84px; } }
+
 /* ==========================================================================
    Scroll-reveal entrance animations (progressive enhancement — only when JS on)
    ========================================================================== */

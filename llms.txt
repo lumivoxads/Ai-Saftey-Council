@@ -21,7 +21,6 @@ All programs are at Professional level and CPD accredited.
 
 - [Home](https://www.aisafetycouncil.co.uk/): Overview of the AI Safety Council, its certifications, Knowledge Centre and credential verification.
 - [Certification Programs](https://www.aisafetycouncil.co.uk/courses.html): Full list of professional certifications with descriptions.
-- [Programme Detail — AISP®](https://www.aisafetycouncil.co.uk/course-details.html): Example certification programme (overview, who it is for, syllabus, format).
 - [About](https://www.aisafetycouncil.co.uk/about.html): Mission, what the Council does, and its approach to AI safety certification.
 - [Contact](https://www.aisafetycouncil.co.uk/contact.html): Enquiry form and contact details.
 
