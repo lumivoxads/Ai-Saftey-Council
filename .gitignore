@@ -12,3 +12,6 @@ Thumbs.db
 
 # Editor/tooling
 .claude/settings.local.json
+
+# Real SMTP credentials — upload directly to the server, never commit
+mail-config.php

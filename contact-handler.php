@@ -4,16 +4,23 @@
  * Receives the contact.html form POST, emails the team at info@aisafetycouncil.co.uk,
  * and sends a confirmation email back to the submitter.
  *
- * Deploy: this file just needs to sit alongside the other .html files on Hostinger —
- * no dependencies, uses PHP's built-in mail(). If deliverability becomes an issue,
- * swap send_mail() below for SMTP auth (e.g. PHPMailer) using the info@ mailbox creds.
+ * Deploy: needs mail-config.php in the same directory (copy mail-config.example.php,
+ * fill in the real mailbox password, upload directly to the server — it's gitignored
+ * and never committed). Sends via authenticated SMTP through the info@ mailbox itself
+ * (see smtp-mailer.php) so messages carry proper SPF/DKIM alignment instead of landing
+ * in spam, which is what happened when this used PHP's raw mail().
  */
 
 header('Content-Type: application/json');
 
+require_once __DIR__ . '/smtp-mailer.php';
+
+if (file_exists(__DIR__ . '/mail-config.php')) {
+    require_once __DIR__ . '/mail-config.php';
+}
+
 $TEAM_EMAIL = 'info@aisafetycouncil.co.uk';
 $SITE_NAME  = 'AI Safety Council';
-$FROM_EMAIL = 'no-reply@aisafetycouncil.co.uk'; // must be a domain the sending server is allowed to use
 
 function respond($ok, $message) {
     http_response_code($ok ? 200 : 400);
@@ -51,10 +58,6 @@ function clean_header($value) {
     return str_replace(["\r", "\n"], '', $value);
 }
 
-function send_mail($to, $subject, $body, $headers) {
-    return mail($to, $subject, $body, implode("\r\n", $headers));
-}
-
 // --- 1) Notify the team ---
 $team_subject = '[Contact form] ' . clean_header($subject) . ' — ' . clean_header($full_name);
 $team_body = "New contact form submission\n\n"
@@ -63,12 +66,6 @@ $team_body = "New contact form submission\n\n"
     . "Organization: " . ($organization !== '' ? $organization : '—') . "\n"
     . "Subject: {$subject}\n\n"
     . "Message:\n{$message}\n";
-$team_headers = [
-    'From: ' . $SITE_NAME . ' <' . $FROM_EMAIL . '>',
-    'Reply-To: ' . clean_header($full_name) . ' <' . clean_header($email) . '>',
-    'Content-Type: text/plain; charset=UTF-8',
-];
-$team_sent = send_mail($TEAM_EMAIL, $team_subject, $team_body, $team_headers);
 
 // --- 2) Confirm to the submitter ---
 $user_subject = "We've received your message — {$SITE_NAME}";
@@ -77,15 +74,17 @@ $user_body = "Hi {$first_name},\n\n"
     . "Your message:\n\"{$message}\"\n\n"
     . "If this is urgent, reply directly to this email.\n\n"
     . "— {$SITE_NAME}\n";
-$user_headers = [
-    'From: ' . $SITE_NAME . ' <' . $FROM_EMAIL . '>',
-    'Reply-To: ' . $TEAM_EMAIL,
-    'Content-Type: text/plain; charset=UTF-8',
-];
-$user_sent = send_mail($email, $user_subject, $user_body, $user_headers);
 
-if ($team_sent) {
+try {
+    smtp_send($TEAM_EMAIL, null, $team_subject, $team_body, $email, $full_name);
+    try {
+        smtp_send($email, $full_name, $user_subject, $user_body, $TEAM_EMAIL, $SITE_NAME);
+    } catch (SmtpException $e) {
+        error_log('Contact form confirmation email failed: ' . $e->getMessage());
+        // Team was notified; a failed confirmation email isn't fatal to the submission.
+    }
     respond(true, "Thanks {$first_name} — your message has been sent. We'll be in touch within two business days.");
+} catch (SmtpException $e) {
+    error_log('Contact form team notification failed: ' . $e->getMessage());
+    respond(false, 'Something went wrong sending your message. Please try again or email ' . $TEAM_EMAIL . ' directly.');
 }
-
-respond(false, 'Something went wrong sending your message. Please try again or email ' . $TEAM_EMAIL . ' directly.');
