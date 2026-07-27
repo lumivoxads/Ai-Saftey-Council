@@ -46,6 +46,7 @@ Resource hub on the homepage; each tile links to its own page.
 
 ## Latest news & insights
 
+- [EU AI Act Digital Omnibus Enters Into Force](https://www.aisafetycouncil.co.uk/news-ai-act-digital-omnibus.html): The Digital Omnibus is now law, deferring high-risk AI deadlines to 2027–28 while transparency rules and prohibitions proceed unchanged.
 - [The EU AI Act's High-Risk Rules and Qualified Human Oversight](https://www.aisafetycouncil.co.uk/news-eu-ai-act.html): Why EU AI Act high-risk obligations make qualified, certified human oversight of workplace AI a legal expectation.
 - [ISO/IEC 42001 Goes Mainstream](https://www.aisafetycouncil.co.uk/news-iso-42001.html): AI management system certification becomes a business requirement; why AI governance is now a profession.
 - [From Compliance to Prediction: AI and Workplace Safety in 2026](https://www.aisafetycouncil.co.uk/news-predictive-safety.html): AI shifts safety from reactive to predictive, but human judgment and guardrails remain essential.
