@@ -109,6 +109,48 @@
     });
   });
 
+  // --- Contact form: submit via fetch to contact-handler.php ---
+  var contactForm = document.getElementById("ascContactForm");
+  if (contactForm) {
+    var statusEl = document.getElementById("ascContactStatus");
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var submitBtn = contactForm.querySelector('button[type="submit"]');
+      var originalLabel = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = "Sending…";
+      statusEl.style.display = "none";
+
+      fetch(contactForm.action, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: { "Accept": "application/json" }
+      })
+        .then(function (res) { return res.json().catch(function () { return { ok: res.ok }; }); })
+        .then(function (data) {
+          if (data && data.ok) {
+            statusEl.textContent = data.message || "Thanks — your message has been sent. We'll be in touch within two business days.";
+            statusEl.style.color = "var(--asc-teal-deep)";
+            contactForm.reset();
+            showToast("Message sent — we'll be in touch soon.");
+          } else {
+            statusEl.textContent = (data && data.message) || "Something went wrong sending your message. Please try again or email info@aisafetycouncil.co.uk directly.";
+            statusEl.style.color = "#b3261e";
+          }
+          statusEl.style.display = "block";
+        })
+        .catch(function () {
+          statusEl.textContent = "Something went wrong sending your message. Please try again or email info@aisafetycouncil.co.uk directly.";
+          statusEl.style.color = "#b3261e";
+          statusEl.style.display = "block";
+        })
+        .finally(function () {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalLabel;
+        });
+    });
+  }
+
   // --- Scroll-reveal entrance animations ---
   var REVEAL = ".asc-section__head, .asc-hero__copy > *, .asc-trust__item, .asc-cert-card, "
     + ".asc-res-card, .asc-prog-card, .asc-feature, .asc-stats > div, .asc-verify__inner > *, "

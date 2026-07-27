@@ -181,17 +181,17 @@
         <div>
           <h2 class="asc-section__title" style="font-size:26px;margin-bottom:8px;">Send us a message</h2>
           <p style="color:var(--asc-muted);margin:0 0 26px;font-size:15px;">We typically respond within two business days.</p>
-          <form class="asc-form" onsubmit="return false;">
+          <form class="asc-form" id="ascContactForm" action="contact-handler.php" method="POST" novalidate>
             <div class="-row">
-              <div class="asc-field"><label>First Name</label><input type="text" placeholder="Jane"></div>
-              <div class="asc-field"><label>Last Name</label><input type="text" placeholder="Doe"></div>
+              <div class="asc-field"><label>First Name</label><input type="text" name="first_name" placeholder="Jane" required></div>
+              <div class="asc-field"><label>Last Name</label><input type="text" name="last_name" placeholder="Doe" required></div>
             </div>
             <div class="-row">
-              <div class="asc-field"><label>Email</label><input type="email" placeholder="jane@company.com"></div>
-              <div class="asc-field"><label>Organization</label><input type="text" placeholder="Company / Institution"></div>
+              <div class="asc-field"><label>Email</label><input type="email" name="email" placeholder="jane@company.com" required></div>
+              <div class="asc-field"><label>Organization</label><input type="text" name="organization" placeholder="Company / Institution"></div>
             </div>
             <div class="asc-field"><label>Subject</label>
-              <select>
+              <select name="subject">
                 <option>Certification enquiry</option>
                 <option>Credential verification</option>
                 <option>Corporate certification</option>
@@ -199,7 +199,13 @@
                 <option>Other</option>
               </select>
             </div>
-            <div class="asc-field"><label>Message</label><textarea placeholder="How can we help?"></textarea></div>
+            <div class="asc-field"><label>Message</label><textarea name="message" placeholder="How can we help?" required></textarea></div>
+            <!-- honeypot: hidden from real users, bots tend to fill every field -->
+            <div style="position:absolute;left:-9999px;" aria-hidden="true">
+              <label>Leave this field empty</label>
+              <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div id="ascContactStatus" role="status" aria-live="polite" style="display:none;margin:0 0 16px;font-size:14px;"></div>
             <div><button class="asc-btn -navy" type="submit">Send Message
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
           </form>
