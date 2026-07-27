@@ -86,9 +86,5 @@ try {
     respond(true, "Thanks {$first_name} — your message has been sent. We'll be in touch within two business days.");
 } catch (SmtpException $e) {
     error_log('Contact form team notification failed: ' . $e->getMessage());
-    $msg = 'Something went wrong sending your message. Please try again or email ' . $TEAM_EMAIL . ' directly.';
-    if (isset($_POST['_debug'])) { // TEMPORARY — remove after diagnosing deliverability
-        $msg .= ' [debug: ' . $e->getMessage() . ']';
-    }
-    respond(false, $msg);
+    respond(false, 'Something went wrong sending your message. Please try again or email ' . $TEAM_EMAIL . ' directly.');
 }
