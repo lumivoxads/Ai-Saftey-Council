@@ -13,24 +13,35 @@ Key facts:
 
 All programs are at Professional level and CPD accredited.
 
-- **CAISP® — Certified AI Safety Professional**: For AI-in-safety practitioners responsible for implementing AI-driven solutions in safety-critical environments.
-- **CAIRMP® — Certified AI Risk Management Professional**: For professionals managing AI risks, controls and assurance programs.
-- **CAIGP® — Certified AI Governance Professional**: For professionals responsible for AI governance, policies and regulatory compliance.
-- **CAIIP® — Certified AI Incident Investigation Professional**: For professionals investigating AI-related incidents, failures and near-misses.
-- **CAI HSEP® — Certified AI HSE Professional**: For HSE professionals integrating AI to improve safety, health, environment and sustainability outcomes.
+- **AISP® — Certified AI Safety Professional**: For AI-in-safety practitioners responsible for implementing AI-driven solutions in safety-critical environments.
+- **AIRP® — Certified AI Risk Management Professional**: For professionals managing AI risks, controls and assurance programs.
+- **AIIP® — Certified AI Incident Investigator Professional**: For professionals investigating AI-related incidents, failures and near-misses.
 
 ## Pages
 
-- [Home](https://www.aisafetycouncil.co.uk/): Overview of the AI Safety Council, its certifications, standards and credential verification.
+- [Home](https://www.aisafetycouncil.co.uk/): Overview of the AI Safety Council, its certifications, Knowledge Centre and credential verification.
 - [Certification Programs](https://www.aisafetycouncil.co.uk/courses.html): Full list of professional certifications with descriptions.
-- [Programme Detail — CAISP®](https://www.aisafetycouncil.co.uk/course-details.html): Example certification programme (overview, who it is for, syllabus, format).
+- [Programme Detail — AISP®](https://www.aisafetycouncil.co.uk/course-details.html): Example certification programme (overview, who it is for, syllabus, format).
 - [About](https://www.aisafetycouncil.co.uk/about.html): Mission, what the Council does, and its approach to AI safety certification.
 - [Contact](https://www.aisafetycouncil.co.uk/contact.html): Enquiry form and contact details.
+
+## Knowledge Centre
+
+Resource hub on the homepage; each tile links to its own page.
+
+- [Research Library](https://www.aisafetycouncil.co.uk/knowledge-research-library.html)
+- [AI Safety Standards](https://www.aisafetycouncil.co.uk/knowledge-ai-safety-standards.html)
+- [Technical Papers](https://www.aisafetycouncil.co.uk/knowledge-technical-papers.html)
+- [Industry Publications](https://www.aisafetycouncil.co.uk/knowledge-industry-publications.html)
+- [Case Studies](https://www.aisafetycouncil.co.uk/knowledge-case-studies.html)
+- [Best Practices](https://www.aisafetycouncil.co.uk/knowledge-best-practices.html)
+- [Regulations & Guidelines](https://www.aisafetycouncil.co.uk/knowledge-regulations-guidelines.html)
+- [Tools & Templates](https://www.aisafetycouncil.co.uk/knowledge-tools-templates.html)
 
 ## Common questions
 
 - **What is the AI Safety Council?** A global professional body that certifies individuals in the safe and responsible use of AI across occupational health, safety, environment and risk.
-- **What certifications does it offer?** CAISP, CAIRMP, CAIGP, CAIIP and CAI HSEP — all at Professional level.
+- **What certifications does it offer?** AISP (Safety), AIRP (Risk Management) and AIIP (Incident Investigator) — all at Professional level.
 - **How are credentials verified?** Employers can verify any AI Safety Council credential instantly and securely via the online verification tool.
 - **Who is certification for?** Safety, HSE and risk professionals, engineers, analysts and consultants working with AI in operational and safety-critical settings.
 
@@ -40,4 +51,10 @@ All programs are at Professional level and CPD accredited.
 - [ISO/IEC 42001 Goes Mainstream](https://www.aisafetycouncil.co.uk/news-iso-42001.html): AI management system certification becomes a business requirement; why AI governance is now a profession.
 - [From Compliance to Prediction: AI and Workplace Safety in 2026](https://www.aisafetycouncil.co.uk/news-predictive-safety.html): AI shifts safety from reactive to predictive, but human judgment and guardrails remain essential.
 - [Why AI-Safety Certification Matters More Than Ever](https://www.aisafetycouncil.co.uk/blog-why-certify.html): The case for independently verified AI-safety competence.
-- [Which AI-Safety Certification Is Right for You?](https://www.aisafetycouncil.co.uk/blog-choose-pathway.html): A guide matching CAISP, CAIRMP, CAIGP, CAIIP and CAI HSEP to your role.
+- [Which AI-Safety Certification Is Right for You?](https://www.aisafetycouncil.co.uk/blog-choose-pathway.html): A guide matching AISP, AIRP and AIIP to your role.
+
+## Social
+
+- Instagram: https://www.instagram.com/ai_safety_council/
+- LinkedIn: https://www.linkedin.com/company/ai-saftey-council/about/
+- Facebook: https://www.facebook.com/people/Ai-Safety-Council/61592444761280/
