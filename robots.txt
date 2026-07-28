@@ -51,4 +51,4 @@ User-agent: Bytespider
 Allow: /
 
 # Sitemap
-Sitemap: https://www.aisafetycouncil.co.uk/sitemap.xml
+Sitemap: https://aisafetycouncil.co.uk/sitemap.xml
