@@ -19,23 +19,23 @@ All programs are at Professional level and CPD accredited.
 
 ## Pages
 
-- [Home](https://www.aisafetycouncil.co.uk/): Overview of the AI Safety Council, its certifications, Knowledge Centre and credential verification.
-- [Certification Programs](https://www.aisafetycouncil.co.uk/courses.html): Full list of professional certifications with descriptions.
-- [About](https://www.aisafetycouncil.co.uk/about.html): Mission, what the Council does, and its approach to AI safety certification.
-- [Contact](https://www.aisafetycouncil.co.uk/contact.html): Enquiry form and contact details.
+- [Home](https://aisafetycouncil.co.uk/): Overview of the AI Safety Council, its certifications, Knowledge Centre and credential verification.
+- [Certification Programs](https://aisafetycouncil.co.uk/courses.html): Full list of professional certifications with descriptions.
+- [About](https://aisafetycouncil.co.uk/about.html): Mission, what the Council does, and its approach to AI safety certification.
+- [Contact](https://aisafetycouncil.co.uk/contact.html): Enquiry form and contact details.
 
 ## Knowledge Centre
 
 Resource hub on the homepage; each tile links to its own page.
 
-- [Research Library](https://www.aisafetycouncil.co.uk/knowledge-research-library.html)
-- [AI Safety Standards](https://www.aisafetycouncil.co.uk/knowledge-ai-safety-standards.html)
-- [Technical Papers](https://www.aisafetycouncil.co.uk/knowledge-technical-papers.html)
-- [Industry Publications](https://www.aisafetycouncil.co.uk/knowledge-industry-publications.html)
-- [Case Studies](https://www.aisafetycouncil.co.uk/knowledge-case-studies.html)
-- [Best Practices](https://www.aisafetycouncil.co.uk/knowledge-best-practices.html)
-- [Regulations & Guidelines](https://www.aisafetycouncil.co.uk/knowledge-regulations-guidelines.html)
-- [Tools & Templates](https://www.aisafetycouncil.co.uk/knowledge-tools-templates.html)
+- [Research Library](https://aisafetycouncil.co.uk/knowledge-research-library.html)
+- [AI Safety Standards](https://aisafetycouncil.co.uk/knowledge-ai-safety-standards.html)
+- [Technical Papers](https://aisafetycouncil.co.uk/knowledge-technical-papers.html)
+- [Industry Publications](https://aisafetycouncil.co.uk/knowledge-industry-publications.html)
+- [Case Studies](https://aisafetycouncil.co.uk/knowledge-case-studies.html)
+- [Best Practices](https://aisafetycouncil.co.uk/knowledge-best-practices.html)
+- [Regulations & Guidelines](https://aisafetycouncil.co.uk/knowledge-regulations-guidelines.html)
+- [Tools & Templates](https://aisafetycouncil.co.uk/knowledge-tools-templates.html)
 
 ## Common questions
 
@@ -46,12 +46,12 @@ Resource hub on the homepage; each tile links to its own page.
 
 ## Latest news & insights
 
-- [EU AI Act Digital Omnibus Enters Into Force](https://www.aisafetycouncil.co.uk/news-ai-act-digital-omnibus.html): The Digital Omnibus is now law, deferring high-risk AI deadlines to 2027–28 while transparency rules and prohibitions proceed unchanged.
-- [The EU AI Act's High-Risk Rules and Qualified Human Oversight](https://www.aisafetycouncil.co.uk/news-eu-ai-act.html): Why EU AI Act high-risk obligations make qualified, certified human oversight of workplace AI a legal expectation.
-- [ISO/IEC 42001 Goes Mainstream](https://www.aisafetycouncil.co.uk/news-iso-42001.html): AI management system certification becomes a business requirement; why AI governance is now a profession.
-- [From Compliance to Prediction: AI and Workplace Safety in 2026](https://www.aisafetycouncil.co.uk/news-predictive-safety.html): AI shifts safety from reactive to predictive, but human judgment and guardrails remain essential.
-- [Why AI-Safety Certification Matters More Than Ever](https://www.aisafetycouncil.co.uk/blog-why-certify.html): The case for independently verified AI-safety competence.
-- [Which AI-Safety Certification Is Right for You?](https://www.aisafetycouncil.co.uk/blog-choose-pathway.html): A guide matching AISP, AIRP and AIIP to your role.
+- [EU AI Act Digital Omnibus Enters Into Force](https://aisafetycouncil.co.uk/news-ai-act-digital-omnibus.html): The Digital Omnibus is now law, deferring high-risk AI deadlines to 2027–28 while transparency rules and prohibitions proceed unchanged.
+- [The EU AI Act's High-Risk Rules and Qualified Human Oversight](https://aisafetycouncil.co.uk/news-eu-ai-act.html): Why EU AI Act high-risk obligations make qualified, certified human oversight of workplace AI a legal expectation.
+- [ISO/IEC 42001 Goes Mainstream](https://aisafetycouncil.co.uk/news-iso-42001.html): AI management system certification becomes a business requirement; why AI governance is now a profession.
+- [From Compliance to Prediction: AI and Workplace Safety in 2026](https://aisafetycouncil.co.uk/news-predictive-safety.html): AI shifts safety from reactive to predictive, but human judgment and guardrails remain essential.
+- [Why AI-Safety Certification Matters More Than Ever](https://aisafetycouncil.co.uk/blog-why-certify.html): The case for independently verified AI-safety competence.
+- [Which AI-Safety Certification Is Right for You?](https://aisafetycouncil.co.uk/blog-choose-pathway.html): A guide matching AISP, AIRP and AIIP to your role.
 
 ## Social
 
